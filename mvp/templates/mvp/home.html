@@ -8,5 +8,19 @@
 <h1>
     Hello people! Working on a mvp app
 </h1>
+
+<div>
+    {% if not comment %}
+    <form method="POST">
+        {% csrf_token %}
+        <table>
+        {{ form.as_table }}
+        </table>
+        <input type="Submit" value="SignUp" />
+
+    </form>{% else %}
+        <div><h2>{{ comment }}</h2></div>
+    {% endif %}
+</div>
 </body>
 </html>
