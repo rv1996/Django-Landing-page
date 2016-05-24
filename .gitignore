@@ -1,0 +1,12 @@
+#byte complied files
+*.pyc 
+*.py~
+#swap files
+*.swp
+
+#pycharm folder
+.idea/
+
+#python cache file
+__pycache__/
+
