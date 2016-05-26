@@ -1,0 +1,14 @@
+{% extends 'mvp/base.html' %}
+
+{% block content %}
+    <div>
+        <h1>Welcome to Contact form</h1>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <table>
+              {{ form.as_table }}
+            </table>
+            <input type="submit" value="Submit" /s>
+        </form>
+    </div>
+{% endblock %}

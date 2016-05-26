@@ -27,6 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'vermarupanshu733@gmail.com'
+EMAIL_HOST_PASSWORD = 'maapaarupzm16a2'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Application definition
 
@@ -121,3 +126,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+# STATIC_ROOT = '/home/rupanshu/Desktop/Blog/static'
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
+#above line point toward the directory just previous to the directory of file containing manage.py
+MEDIA_URL =  '/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "..", 'media_root')
+
+# we can also do PROTECTED_MEDIA
